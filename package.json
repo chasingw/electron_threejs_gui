@@ -1,0 +1,40 @@
+{
+  "name": "pcd_viewer_gui",
+  "version": "1.0.0",
+  "description": "pcl viewer app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "build": "electron-builder",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chasingw/pcd_viewer_gui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chasingw/pcd_viewer_gui/issues"
+  },
+  "homepage": "https://github.com/chasingw/pcd_viewer_gui#readme",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.2.1",
+    "electron": "^25.2.0"
+  },
+  "build": {
+    "appId": "top.mistakes.zz.viewer"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "leva": "^0.9.35",
+    "three": "^0.153.0"
+  }
+}
